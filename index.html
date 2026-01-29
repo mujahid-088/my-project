@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Security | Secure Your Digital World</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #000, #0f2027, #203a43, #2c5364);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #00ffcc;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b') no-repeat center/cover;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      color: #00ffcc;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      padding: 12px 30px;
+      background: #00ffcc;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      color: #000;
+      border-radius: 5px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.05);
+      background: #00ccaa;
+    }
+
+    section {
+      padding: 80px 50px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      color: #00ffcc;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #111;
+      padding: 30px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+    }
+
+    .card h3 {
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .contact button {
+      padding: 12px;
+      background: #00ffcc;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CyberSecure</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <h2>Protect Your Digital Life</h2>
+    <p>We provide advanced cyber security solutions to protect your data, systems, and networks from modern cyber threats.</p>
+    <button>Get Started</button>
+  </div>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+    </div>
+    <div class="services">
+      <div class="card">
+        <h3>Network Security</h3>
+        <p>Protect your network infrastructure from unauthorized access, attacks, and data breaches.</p>
+      </div>
+      <div class="card">
+        <h3>Ethical Hacking</h3>
+        <p>Identify vulnerabilities in your system before hackers do with our ethical hacking services.</p>
+      </div>
+      <div class="card">
+        <h3>Data Protection</h3>
+        <p>Secure sensitive information using advanced encryption and data security techniques.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Security</h3>
+        <p>Ensure your cloud infrastructure is protected against cyber threats and data leaks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+    <div class="about">
+      <p>We are a team of cyber security experts dedicated to securing digital environments. Our mission is to protect businesses and individuals from cyber attacks by providing reliable and modern security solutions.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 CyberSecure. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
